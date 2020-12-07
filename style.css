@@ -144,9 +144,11 @@ figure{
   position: relative;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 .event p{
-  text-align: left;
+  text-align: justify;
+  color: white;
 }
 .event a{
   margin: 10px;
