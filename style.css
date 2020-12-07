@@ -30,7 +30,6 @@
 body{
   margin:0;
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
   background-image: url("https://i.imgur.com/e4NSOlL.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -131,7 +130,7 @@ figure{
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #393d40;
+  background-color: #f4fbff;
 }
 .event img{
   width: 100%;
@@ -141,15 +140,13 @@ figure{
 .event-detail{
   margin:20px 40px;
   margin-top: -40px;
-  background-color: black;
+  background-color: white;
   position: relative;
   padding: 20px;
   text-align: center;
-  color: white;
 }
 .event p{
-  text-align: justify;
-  color: white;
+  text-align: left;
 }
 .event a{
   margin: 10px;
@@ -219,7 +216,6 @@ figure{
   .event-detail h3{
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
-    color: white;
   }
   .header a{
     justify-content: center;
