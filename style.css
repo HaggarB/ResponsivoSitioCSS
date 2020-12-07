@@ -130,7 +130,7 @@ figure{
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f4fbff;
+  background-color: #393d40;
 }
 .event img{
   width: 100%;
@@ -140,7 +140,7 @@ figure{
 .event-detail{
   margin:20px 40px;
   margin-top: -40px;
-  background-color: white;
+  background-color: black;
   position: relative;
   padding: 20px;
   text-align: center;
@@ -216,6 +216,7 @@ figure{
   .event-detail h3{
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: white;
   }
   .header a{
     justify-content: center;
