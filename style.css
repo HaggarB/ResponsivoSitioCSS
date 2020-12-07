@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?8f0wr6');
+  src:  url('./fonts/icomoon.eot?8f0wr6#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf') format('truetype'),
+    url('./fonts/icomoon.woff') format('woff'),
+    url('./fonts/icomoon.svg?8f0wr6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+body{
+  margin:0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url("https://i.imgur.com/e4NSOlL.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+h1{
+  margin: 0px;
+  line-height: 1.5em;
+  font-size: 40px;
+  letter-spacing: -.2px;
+  color:white
+}
+h2{
+  color:#1b2127;
+  text-transform: uppercase;
+  font-family: 'Impact', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+h1 strong{
+  color: #1b2127;
+}
+figure{
+  margin: 0;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color:#1b2127;
+  color: white;
+  height: 70px;
+}
+.header a{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0px 10px;
+}
+.menu{
+  height: inherit;
+}
+.menu ul{
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.menu ul li{
+  margin: 0 20px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: darkred;
+  color: rgb(218, 233, 12);
+  height: 70px;
+}
+.logo img{
+  height: 50px;
+  vertical-align: middle;
+}
+.footer{
+  display: flex;
+  color: white;
+  background-color: darkred;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.event-title{
+  margin-left: 20px;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  border: 1px ;
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.event-detail{
+  margin:20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event p{
+  text-align: left;
+}
+.event a{
+  margin: 10px;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+}
+.footer a{
+  color: white;
+  padding: 0 10 px;
+}
+.texto_footer{
+  margin: 10px 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.container{
+  max-width: fit-content;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:rgba(0,0,0,.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+.logo-title{
+ align-items: center;
+ display: block;
+}
+
+.logo-title img{
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 2560px){
+  .event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+@media screen and (max-width: 1440px){
+  .container{
+    padding: 0 1.8cm; /**/
+  }
+  .event-title{
+    margin: 25px;
+  }
+  .event-detail h3{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  }
+  .header a{
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 1.8cm; /**/
+  }
+  .event-title{
+    margin: 25px;
+  }
+  .event-detail h3{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  }
+  .header a{
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .burger-button{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    background-color:  rgba(17, 44, 83, 0.651);
+    z-index: 1;
+    top:0;
+    bottom:0;
+    left:-100vw;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left:0;
+  }
+  .header{
+    display:block;
+    height: auto;
+  }
+  .header ul{
+    display: initial;
+  }
+  .header ul li{
+    height: 50px;
+    justify-content: center;
+  }
+  .header a{
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    margin: 20px 0;
+  }
+  .header.logo{
+    text-align: right;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100% ;
+  }
+  
+}
+@media screen and (max-width: 425px){
+  .event-title{
+    margin: 10px;
+  }
+  .event-detail h3{
+    font-size: 12px;
+
+  }
+  .event-detail a{
+    padding:5px 60px;
+  }
+  .footer{
+    display: black;
+    text-align: center;
+    border:1px solid transparent;
+  }
+  .container{
+    max-width: 425px !important;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .container{
+    flex: 1;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .container{
+    width: 100%;
+    flex: 1;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
+}

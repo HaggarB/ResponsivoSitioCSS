@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dev</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/23/49/2d/23492d49eefc1794c50377c2613baa00.jpg">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1 ">
+</head>
+
+<body>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+  <header class="header">
+    <div class="container">
+      <figure class="logo"><img src="images/logo1.png" alt="Logotipo"></figure>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a class="link" href="https://twitter.com/berserk_project">Twitter oficial</a>
+          </li>
+          <li>
+            <a class="link" href="https://www.dai-berserk-ten.com">Tienda oficial</a>
+          </li>
+          <li>
+            <a class="link" href="https://www.tiendapanini.com.mx/mexico/soluciones/busqueda.aspx?fcp=28238">Ficha Panini</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+<div class="logo-title">
+<img src="images/logo2.png">
+</div>
+  </div>
+  <section id="eventos" class="event-list">
+    <div class="container">
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="https://images-na.ssl-images-amazon.com/images/I/91HX2o4MdmL._AC_SL1440_.jpg" width="500" alt="experiencia">
+        </figure>
+        <div class="event-detail">
+          <h3>Manga</h3>
+          <p>Berserk comenzó su publicación en 1988, creación del gran mangaka "Kentaro Miura", desde entonces nos narra la historia de Guts, titulado como "El Espadachín Negro" por parte de sus enemigos. </p>
+          <a href="http://dondeterminaelinfinito.blogspot.com/2011/05/berserk.html">Más</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="https://gamespot1.cbsistatic.com/uploads/scale_landscape/1562/15626911/3736232-berserk.jpeg" width="500" alt="experiencia">
+        </figure>
+        <div class="event-detail">
+          <h3>Anime (1997)</h3>
+          <p>Siendo esta la versión más fiel al manga, el anime del 97 es considerado una obra de culto y la favorita de los fans, narrando el arco de "La Época Dorada", considerada una de las mejores historias jamás contadas.</p>
+          <a href="https://www.youtube.com/watch?v=IXL5r3n862U">Más</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="https://tech4gamers.com/wp-content/uploads/2016/08/Berserk-Screenshot_7.jpg" width="500" alt="experiencia">
+        </figure>
+        <div class="event-detail">
+          <h3>Videojuegos</h3>
+          <p>La serie ha sido adaptada varias veces en diversos videojuegos, sin embargo el juego más exitoso ha sido la versión para el PS2, que solo salió en el mercado japonés.</p>
+          <a href="https://www.youtube.com/watch?v=YSKMqKHQrh8">Más</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="https://occ-0-1068-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbPn0Zht-wOeCIGqLBWjcivS7xbviiZ-hEC29G7MUe66dsgipX3arwssOjwnU2E3HNDRKT0_4pVOWlkVQz0H_8Xwx-lP.jpg?r=541" width="500" alt="experiencia">
+        </figure>
+        <div class="event-detail">
+          <h3>Películas</h3>
+          <p>Berserk ha sido adaptada en el cine por medio de una trilogía que nos vuelve a narrar el arco de "La Época Dorada", ahora con una animación moderna, efectos CGI muy visuales y extiende más los detalles que en el anime del 97 fueron omitidos.</p>
+          <a href="https://www.youtube.com/watch?v=ZXjaTICqRf8">Más</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p class="texto_footer">Héctor Arriaga </p>
+      </div>
+      <div>
+        <p class="texto_footer">Contacto: <a href="">a1117150067@utch.edu.mx</a></p
+          class="texto_footer">
+      </div>
+    </div>
+  </footer>
+  <script>
+    const burgerButton = document.querySelector('#burger-menu');
+    const menu = document.querySelector('.menu');
+    const movileWidth = window.matchMedia('screen and (max-width:767px)');
+    movileWidth.addListener(validation);
+
+    function validation(evento){
+      if(evento.matches){
+        burgerButton.addEventListener('click', hide_show_menu);
+      }else{
+        burgerButton.removeEventListener('click', hide_show_menu);
+      }
+    }
+    validation(movileWidth);
+    function hide_show_menu(){
+      if(menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+      }else{
+        menu.classList.add('is-active');
+      }
+    }
+  </script>
+</body>
+
+</html>
