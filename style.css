@@ -30,6 +30,7 @@
 body{
   margin:0;
   font-family: 'Source Sans Pro', sans-serif;
+  color: white;
   background-image: url("https://i.imgur.com/e4NSOlL.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
